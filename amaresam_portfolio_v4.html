@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amaresam Ramanjaneyulu</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Sora:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="amaresam_portfolio_v4.css">
+</head>
+<body>
+  <canvas id="particles"></canvas>
+  <div class="cursor" id="cur"></div>
+  <div class="cursor-ring" id="ring"></div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">
+      <div class="logo-blink"></div>
+      AR.dev
+    </div>
+    <div class="nav-links">
+      <a href="#hero">home</a>
+      <a href="#skills">skills</a>
+      <a href="#projects">projects</a>
+      <a href="#certs">certs</a>
+      <a href="#contact">contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero" style="max-width: 100%;">
+    <div class="grid-bg"></div>
+    <div class="orb o1"></div>
+    <div class="orb o2"></div>
+    <div class="orb o3"></div>
+
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <div class="live-dot"></div>
+        Open to opportunities - 2026 Graduate
+      </div>
+
+      <h1 class="ht">
+        <span class="l1">Amaresam</span>
+        <span class="l2">Ramanjaneyulu</span>
+      </h1>
+
+      <p class="hero-sub">
+        Final-year B.Tech AI and ML engineer building NLP pipelines, agentic RAG systems,
+        ML classifiers, big data solutions, and interactive dashboards. Ongole, India.
+      </p>
+
+      <div class="hero-cta">
+        <a href="https://github.com/ram-118" target="_blank" rel="noopener noreferrer" class="btn btn-p">
+          <i class="devicon-github-original" style="font-size: 16px;"></i> GitHub
+        </a>
+        <a href="https://linkedin.com/in/amaresam-ram" target="_blank" rel="noopener noreferrer" class="btn btn-o">
+          <i class="devicon-linkedin-plain colored" style="font-size: 16px;"></i> LinkedIn
+        </a>
+        <a href="mailto:amaresamram@gmail.com" class="btn btn-g">Email me</a>
+      </div>
+    </div>
+
+    <div class="hero-signature-logo" aria-hidden="true">
+      <div class="sig-core">
+        <div class="toy-chip">
+          <div class="chip-body">
+            <span class="chip-dot"></span>
+            <span class="chip-dot"></span>
+            <span class="chip-dot"></span>
+          </div>
+          <div class="chip-pins chip-pins-top"></div>
+          <div class="chip-pins chip-pins-bottom"></div>
+          <div class="chip-pins chip-pins-left"></div>
+          <div class="chip-pins chip-pins-right"></div>
+          <div class="chip-core">AR</div>
+          <div class="chip-glow"></div>
+        </div>
+        <div class="sig-tag">AR TECH CORE</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STRIP -->
+  <section class="tech-strip">
+    <div class="tech-track" id="track">
+      <div class="tech-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+      <div class="tech-item"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+      <div class="tech-item"><i class="devicon-mysql-plain colored"></i><span>SQL</span></div>
+      <div class="tech-item"><i class="devicon-flutter-plain colored"></i><span>Flutter</span></div>
+      <div class="tech-item"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+      <div class="tech-item"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+      <div class="tech-item"><i class="devicon-flask-original" style="color: #94a3b8;"></i><span>Flask</span></div>
+      <div class="tech-item"><i class="devicon-jupyter-plain colored"></i><span>Jupyter</span></div>
+      <div class="tech-item"><i class="devicon-github-original" style="color: #94a3b8;"></i><span>GitHub</span></div>
+      <div class="tech-item"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
+      <div class="tech-item"><i class="devicon-googlecolab-plain colored"></i><span>Colab</span></div>
+      <div class="tech-item"><i class="devicon-figma-plain colored"></i><span>Figma</span></div>
+      <div class="tech-item"><i class="devicon-canva-original colored"></i><span>Canva</span></div>
+      <div class="tech-item"><i class="devicon-apache-plain colored"></i><span>Hadoop</span></div>
+      <div class="tech-item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+
+      <!-- duplicated for seamless loop -->
+      <div class="tech-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+      <div class="tech-item"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+      <div class="tech-item"><i class="devicon-mysql-plain colored"></i><span>SQL</span></div>
+      <div class="tech-item"><i class="devicon-flutter-plain colored"></i><span>Flutter</span></div>
+      <div class="tech-item"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+      <div class="tech-item"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+      <div class="tech-item"><i class="devicon-flask-original" style="color: #94a3b8;"></i><span>Flask</span></div>
+      <div class="tech-item"><i class="devicon-jupyter-plain colored"></i><span>Jupyter</span></div>
+      <div class="tech-item"><i class="devicon-github-original" style="color: #94a3b8;"></i><span>GitHub</span></div>
+      <div class="tech-item"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
+      <div class="tech-item"><i class="devicon-googlecolab-plain colored"></i><span>Colab</span></div>
+      <div class="tech-item"><i class="devicon-figma-plain colored"></i><span>Figma</span></div>
+      <div class="tech-item"><i class="devicon-canva-original colored"></i><span>Canva</span></div>
+      <div class="tech-item"><i class="devicon-apache-plain colored"></i><span>Hadoop</span></div>
+      <div class="tech-item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-row">
+    <div class="stat-cell">
+      <span class="stat-num" id="s1">0</span>
+      <div class="stat-label">GPA - B.Tech AI and ML</div>
+    </div>
+    <div class="stat-cell">
+      <span class="stat-num" id="s2">0</span>
+      <div class="stat-label">GitHub repos</div>
+    </div>
+    <div class="stat-cell">
+      <span class="stat-num" id="s3">0</span>
+      <div class="stat-label">Certifications</div>
+    </div>
+    <div class="stat-cell">
+      <span class="stat-num" id="s4">0&#215;</span>
+      <div class="stat-label">Competition wins</div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <div class="divider"></div>
+  <section class="sec reveal" id="skills">
+    <div class="eyebrow">skills</div>
+    <h2 class="stitle">Technical toolkit</h2>
+    <div class="skills-grid">
+      <div class="sg">
+        <div class="sg-bar"></div>
+        <div class="sg-head"><span class="sg-ico">&#x1F4BB;</span><span class="sg-t">Languages</span></div>
+        <div class="pills">
+          <span class="pill"><i class="devicon-python-plain colored"></i>Python</span>
+          <span class="pill"><i class="devicon-java-plain colored"></i>Java</span>
+          <span class="pill"><i class="devicon-mysql-plain colored"></i>SQL</span>
+          <span class="pill"><i class="devicon-dart-plain colored"></i>Dart</span>
+          <span class="pill"><i class="devicon-html5-plain colored"></i>HTML</span>
+          <span class="pill"><i class="devicon-css3-plain colored"></i>CSS</span>
+        </div>
+      </div>
+
+      <div class="sg">
+        <div class="sg-bar"></div>
+        <div class="sg-head"><span class="sg-ico">&#x1F9E0;</span><span class="sg-t">AI / ML</span></div>
+        <div class="pills">
+          <span class="pill">&#x1F916; ML</span>
+          <span class="pill">&#x1F4DD; NLP</span>
+          <span class="pill">&#x1F525; Deep Learning</span>
+          <span class="pill">&#x1F504; Transfer Learning</span>
+          <span class="pill">&#x1F50D; RAG</span>
+          <span class="pill">&#x1F4AC; LLMs</span>
+        </div>
+      </div>
+
+      <div class="sg">
+        <div class="sg-bar"></div>
+        <div class="sg-head"><span class="sg-ico">&#x1F4DA;</span><span class="sg-t">Libraries</span></div>
+        <div class="pills">
+          <span class="pill">&#x1F33F; NLTK</span>
+          <span class="pill">&#x1F52C; SpaCy</span>
+          <span class="pill">&#x1F917; BART</span>
+          <span class="pill">&#x1F4F1; MobileNetV2</span>
+          <span class="pill"><i class="devicon-flask-original" style="color: #94a3b8; font-size: 13px;"></i>Flask</span>
+          <span class="pill">&#x1F418; Hadoop</span>
+        </div>
+      </div>
+
+      <div class="sg">
+        <div class="sg-bar"></div>
+        <div class="sg-head"><span class="sg-ico">&#x1F6E0;&#xFE0F;</span><span class="sg-t">Dev Tools</span></div>
+        <div class="pills">
+          <span class="pill"><i class="devicon-git-plain colored"></i>Git</span>
+          <span class="pill"><i class="devicon-github-original" style="color: #94a3b8; font-size: 13px;"></i>GitHub</span>
+          <span class="pill"><i class="devicon-jupyter-plain colored"></i>Jupyter</span>
+          <span class="pill"><i class="devicon-googlecolab-plain colored"></i>Colab</span>
+          <span class="pill"><i class="devicon-vscode-plain colored"></i>VS Code</span>
+        </div>
+      </div>
+
+      <div class="sg">
+        <div class="sg-bar"></div>
+        <div class="sg-head"><span class="sg-ico">&#x1F3A8;</span><span class="sg-t">Design & Data</span></div>
+        <div class="pills">
+          <span class="pill">&#x1F4CA; Power BI</span>
+          <span class="pill"><i class="devicon-figma-plain colored"></i>Figma</span>
+          <span class="pill"><i class="devicon-canva-original colored"></i>Canva</span>
+          <span class="pill">&#x1F4C8; Data Analysis</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <div class="divider"></div>
+  <section class="sec reveal" id="projects">
+    <div class="eyebrow">projects</div>
+    <h2 class="stitle">All GitHub repositories</h2>
+
+    <div class="pf">
+      <button class="fb on" data-f="all">All (10)</button>
+      <button class="fb" data-f="python">&#x1F40D; Python</button>
+      <button class="fb" data-f="java">&#x2615; Java</button>
+      <button class="fb" data-f="ml">&#x1F9E0; ML / AI</button>
+      <button class="fb" data-f="data">&#x1F4CA; Data</button>
+    </div>
+
+    <div class="pg" id="pg">
+      <article class="pc" data-c="python ml">
+        <div class="pc-glow"></div>
+        <div class="feat">&#x2B50; Featured</div>
+        <div class="pc-top">
+          <div class="pc-ico ico-py"><i class="devicon-python-plain colored" style="font-size: 24px;"></i></div>
+          <div class="pc-links">
+            <span class="lang-b lb-py"><i class="devicon-python-plain colored"></i>Python</span>
+            <a href="https://github.com/ram-118/agentic-calendar-rag" target="_blank" rel="noopener noreferrer" class="gh-btn"><i class="devicon-github-original" style="font-size: 14px;"></i></a>
+          </div>
+        </div>
+        <div class="pc-title">agentic-calendar-rag</div>
+        <p class="pc-desc">Agentic RAG system handling calendar and scheduling queries using LLMs. Vector-based semantic search enables context-aware grounded responses with about 85-90% query accuracy.</p>
+        <div class="pc-foot">
+          <div class="pc-tags"><span class="tg">LLMs</span><span class="tg">RAG</span><span class="tg">VectorDB</span></div>
+          <div class="pc-date">Jan 7</div>
+        </div>
+      </article>
+
+      <article class="pc" data-c="python ml">
+        <div class="pc-glow"></div>
+        <div class="feat">&#x2B50; Featured</div>
+        <div class="pc-top">
+          <div class="pc-ico ico-py">&#x1F4DD;</div>
+          <div class="pc-links">
+            <span class="lang-b lb-py"><i class="devicon-python-plain colored"></i>Python</span>
+            <a href="https://github.com/ram-118/text-summarization" target="_blank" rel="noopener noreferrer" class="gh-btn"><i class="devicon-github-original" style="font-size: 14px;"></i></a>
+          </div>
+        </div>
+        <div class="pc-title">text-summarization</div>
+        <p class="pc-desc">Facebook BART transformer plus NLTK and SpaCy preprocessing for automated summarization. Optimized for F1-score with around 85% accuracy and about 40% less manual effort.</p>
+        <div class="pc-foot">
+          <div class="pc-tags"><span class="tg">BART</span><span class="tg">NLTK</span><span class="tg">SpaCy</span></div>
+          <div class="pc-date">May 27, 2025</div>
+        </div>
+      </article>
+
+      <article class="pc" data-c="data">
+        <div class="pc-glow"></div>
+        <div class="feat">&#x2B50; Featured</div>
+        <div class="pc-top">
+          <div class="pc-ico ico-pbi">&#x1F4CA;</div>
+          <div class="pc-links">
+            <span class="lang-b lb-pbi">Power BI</span>
+            <a href="https://github.com/ram-118/Blinkit_analysis" target="_blank" rel="noopener noreferrer" class="gh-btn"><i class="devicon-github-original" style="font-size: 14px;"></i></a>
+          </div>
+        </div>
+        <div class="pc-title">Blinkit_analysis</div>
+        <p class="pc-desc">Interactive Power BI dashboard with 12+ visualizations for sales trends, customer satisfaction, and product performance. Reduced reporting effort and sped up analysis workflows.</p>
+        <div class="pc-foot">
+          <div class="pc-tags"><span class="tg">PowerBI</span><span class="tg">DAX</span><span class="tg">Analytics</span></div>
+          <div class="pc-date">May 26, 2025</div>
+        </div>
+      </article>
+
+      <article class="pc" data-c="python ml">
+        <div class="pc-glow"></div>
+        <div class="pc-top">
+          <div class="pc-ico ico-py"><i class="devicon-python-plain colored" style="font-size: 24px;"></i></div>
+          <div class="pc-links">
+            <span class="lang-b lb-py"><i class="devicon-python-plain colored"></i>Python</span>
+            <a href="https://github.com/ram-118/nlp_project" target="_blank" rel="noopener noreferrer" class="gh-btn"><i class="devicon-github-original" style="font-size: 14px;"></i></a>
+          </div>
+        </div>
+        <div class="pc-title">nlp_project</div>
+        <p class="pc-desc">Text summarization using NLP with classical and neural approaches for automated document summarization in Python.</p>
+        <div class="pc-foot">
+          <div class="pc-tags"><span class="tg">NLP</span><span class="tg">Python</span></div>
+          <div class="pc-date">Dec 18, 2024</div>
+        </div>
+      </article>
+
+      <article class="pc" data-c="python ml">
+        <div class="pc-glow"></div>
+        <div class="pc-top">
+          <div class="pc-ico ico-nb"><i class="devicon-jupyter-plain colored" style="font-size: 24px;"></i></div>
+          <div class="pc-links">
+            <span class="lang-b lb-nb"><i class="devicon-jupyter-plain colored"></i>Jupyter</span>
+            <a href="https://github.com/ram-118/ml-project-1" target="_blank" rel="noopener noreferrer" class="gh-btn"><i class="devicon-github-original" style="font-size: 14px;"></i></a>
+          </div>
+        </div>
+        <div class="pc-title">ml-project-1</div>
+        <p class="pc-desc">Machine learning notebook exploring model training, evaluation, and optimization workflows using Python and Jupyter.</p>
+        <div class="pc-foot">
+          <div class="pc-tags"><span class="tg">ML</span><span class="tg">Jupyter</span></div>
+          <div class="pc-date">May 23, 2024</div>
+        </div>
+      </article>
+
+      <article class="pc" data-c="java">
+        <div class="pc-glow"></div>
+        <div class="pc-top">
+          <div class="pc-ico ico-java"><i class="devicon-java-plain colored" style="font-size: 24px;"></i></div>
+          <div class="pc-links">
+            <span class="lang-b lb-java"><i class="devicon-java-plain colored"></i>Java</span>
+            <a href="https://github.com/ram-118/Quiz-Automation" target="_blank" rel="noopener noreferrer" class="gh-btn"><i class="devicon-github-original" style="font-size: 14px;"></i></a>
+          </div>
+        </div>
+        <div class="pc-title">Quiz-Automation</div>
+        <p class="pc-desc">Java-based quiz automation system for generating, running, and evaluating quiz workflows programmatically.</p>
+        <div class="pc-foot">
+          <div class="pc-tags"><span class="tg">Java</span><span class="tg">Automation</span></div>
+          <div class="pc-date">Jan 23</div>
+        </div>
+      </article>
+
+      <article class="pc" data-c="java data">
+        <div class="pc-glow"></div>
+        <div class="pc-top">
+          <div class="pc-ico ico-java">&#x1F418;</div>
+          <div class="pc-links">
+            <span class="lang-b lb-java"><i class="devicon-java-plain colored"></i>Java</span>
+            <a href="https://github.com/ram-118/BDA-hadoop" target="_blank" rel="noopener noreferrer" class="gh-btn"><i class="devicon-github-original" style="font-size: 14px;"></i></a>
+          </div>
+        </div>
+        <div class="pc-title">BDA-hadoop</div>
+        <p class="pc-desc">Big data analytics with Hadoop using Java MapReduce implementations for distributed data processing pipelines.</p>
+        <div class="pc-foot">
+          <div class="pc-tags"><span class="tg">Hadoop</span><span class="tg">MapReduce</span><span class="tg">BigData</span></div>
+          <div class="pc-date">Mar 15, 2025</div>
+        </div>
+      </article>
+
+      <article class="pc" data-c="ml python">
+        <div class="pc-glow"></div>
+        <div class="pc-top">
+          <div class="pc-ico ico-misc">&#x1F50D;</div>
+          <div class="pc-links">
+            <span class="lang-b lb-misc">General</span>
+            <a href="https://github.com/ram-118/code-review" target="_blank" rel="noopener noreferrer" class="gh-btn"><i class="devicon-github-original" style="font-size: 14px;"></i></a>
+          </div>
+        </div>
+        <div class="pc-title">code-review</div>
+        <p class="pc-desc">Automated code review tooling with AI-assisted suggestions and static analysis to streamline the development review process.</p>
+        <div class="pc-foot">
+          <div class="pc-tags"><span class="tg">AI</span><span class="tg">DevTools</span></div>
+          <div class="pc-date">Jul 7, 2025</div>
+        </div>
+      </article>
+
+      <article class="pc" data-c="ml">
+        <div class="pc-glow"></div>
+        <div class="pc-top">
+          <div class="pc-ico ico-dart"><i class="devicon-flutter-plain colored" style="font-size: 24px;"></i></div>
+          <div class="pc-links">
+            <span class="lang-b lb-dart"><i class="devicon-flutter-plain colored"></i>Dart</span>
+            <a href="https://github.com/ram-118/Sign-Bridge" target="_blank" rel="noopener noreferrer" class="gh-btn"><i class="devicon-github-original" style="font-size: 14px;"></i></a>
+          </div>
+        </div>
+        <div class="pc-title">Sign-Bridge</div>
+        <p class="pc-desc">Flutter and Dart sign language bridge app connecting hearing-impaired users through real-time gesture recognition and translation. (Forked)</p>
+        <div class="pc-foot">
+          <div class="pc-tags"><span class="tg">Flutter</span><span class="tg">Dart</span><span class="tg">AI</span></div>
+          <div class="pc-date">Dec 15, 2024</div>
+        </div>
+      </article>
+
+      <article class="pc" data-c="misc">
+        <div class="pc-glow"></div>
+        <div class="pc-top">
+          <div class="pc-ico ico-misc">&#x2705;</div>
+          <div class="pc-links">
+            <span class="lang-b lb-misc">General</span>
+            <a href="https://github.com/ram-118/to-do_list" target="_blank" rel="noopener noreferrer" class="gh-btn"><i class="devicon-github-original" style="font-size: 14px;"></i></a>
+          </div>
+        </div>
+        <div class="pc-title">to-do_list</div>
+        <p class="pc-desc">Task management to-do application for organizing and tracking daily tasks and productivity goals.</p>
+        <div class="pc-foot">
+          <div class="pc-tags"><span class="tg">App</span><span class="tg">Productivity</span></div>
+          <div class="pc-date">Feb 23, 2024</div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <div class="divider"></div>
+  <section class="sec reveal" id="experience">
+    <div class="eyebrow">experience</div>
+    <h2 class="stitle">Work history</h2>
+
+    <div class="exp-wrap">
+      <div class="exp-head">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <div class="exp-logo">SI</div>
+          <div>
+            <div class="exp-co">SmartInternz</div>
+            <div class="exp-role">Machine Learning Virtual Intern</div>
+          </div>
+        </div>
+        <span class="exp-tag">Virtual - ML Engineering</span>
+      </div>
+
+      <ul class="el">
+        <li>
+          Deployed Flask web app with deep learning image classification for real-time pollen grain
+          identification at <strong style="color: var(--ac);">90% accuracy</strong>, reducing manual effort.
+        </li>
+        <li>
+          Implemented transfer learning with <strong style="color: var(--ac2);">MobileNetV2</strong>
+          including preprocessing, data augmentation, training, and deployment.
+        </li>
+        <li>Collaborated cross-functionally to design, test, and ship end-to-end ML solutions.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <div class="divider"></div>
+  <section class="sec reveal" id="certs">
+    <div class="eyebrow">certifications</div>
+    <h2 class="stitle">Credentials earned</h2>
+
+    <div class="certs-grid">
+      <div class="cc">
+        <div class="cc-shine"></div>
+        <div class="cert-logo cl-ibm">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+          <span class="cert-fb">IBM</span>
+        </div>
+        <div>
+          <div class="cert-name">Machine Learning with Python</div>
+          <div class="cert-iss">IBM</div>
+        </div>
+      </div>
+
+      <div class="cc">
+        <div class="cc-shine"></div>
+        <div class="cert-logo cl-oracle">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg" alt="Oracle logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+          <span class="cert-fb">OCI</span>
+        </div>
+        <div>
+          <div class="cert-name">AI Foundations Associate</div>
+          <div class="cert-iss">Oracle</div>
+        </div>
+      </div>
+
+      <div class="cc">
+        <div class="cc-shine"></div>
+        <div class="cert-logo cl-oracle">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg" alt="Oracle logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+          <span class="cert-fb">OCI</span>
+        </div>
+        <div>
+          <div class="cert-name">Data Science Professional</div>
+          <div class="cert-iss">Oracle</div>
+        </div>
+      </div>
+
+      <div class="cc">
+        <div class="cc-shine"></div>
+        <div class="cert-logo cl-infosys">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg" alt="Infosys logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+          <span class="cert-fb">INF</span>
+        </div>
+        <div>
+          <div class="cert-name">Python Programming</div>
+          <div class="cert-iss"><i class="devicon-python-plain colored"></i> Infosys Springboard</div>
+        </div>
+      </div>
+
+      <div class="cc">
+        <div class="cc-shine"></div>
+        <div class="cert-logo cl-infosys">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg" alt="Infosys logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+          <span class="cert-fb">INF</span>
+        </div>
+        <div>
+          <div class="cert-name">Power BI</div>
+          <div class="cert-iss">Infosys Springboard</div>
+        </div>
+      </div>
+
+      <a class="cc cert-link" href="https://drive.google.com/file/d/1EQ_r_J_50RDx-9prTLknD7Sx7yzpRSuZ/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <div class="cc-shine"></div>
+        <div class="cert-logo cl-isro"><span class="cert-fb" style="display: block;">ISRO</span></div>
+        <div>
+          <div class="cert-name">ISRO Certificate</div>
+          <div class="cert-iss">ISRO</div>
+        </div>
+      </a>
+
+      <a class="cc cert-link" href="https://drive.google.com/file/d/1iLZdBbPYamlhjRbgg20vtoUx2Ir3dYkb/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <div class="cc-shine"></div>
+        <div class="cert-logo cl-infosys">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg" alt="Infosys logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+          <span class="cert-fb">INF</span>
+        </div>
+        <div>
+          <div class="cert-name">Power BI Certificate</div>
+          <div class="cert-iss">Infosys Springboard</div>
+        </div>
+      </a>
+
+      <a class="cc cert-link" href="https://drive.google.com/file/d/1cfJCacowaqsLJgjbgydKY9WljvPh1BWY/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <div class="cc-shine"></div>
+        <div class="cert-logo cl-nlp"><span class="cert-fb" style="display: block;">NLP</span></div>
+        <div>
+          <div class="cert-name">NLP Certificate</div>
+          <div class="cert-iss">NLP Program</div>
+        </div>
+      </a>
+
+      <a class="cc cert-link" href="https://drive.google.com/file/d/1GUkZ7KmRtXrqqhB2CKio8GNBp4aOBWUZ/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <div class="cc-shine"></div>
+        <div class="cert-logo cl-oracle">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg" alt="Oracle logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+          <span class="cert-fb">OCI</span>
+        </div>
+        <div>
+          <div class="cert-name">OCI 2025 AI Foundations Associate</div>
+          <div class="cert-iss">Oracle</div>
+        </div>
+      </a>
+
+      <a class="cc cert-link" href="https://drive.google.com/file/d/10W9aj8_wV5Q0GYsezpXFMjs7Bx-cmCY0/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <div class="cc-shine"></div>
+        <div class="cert-logo cl-skill"><span class="cert-fb" style="display: block;">SKILL</span></div>
+        <div>
+          <div class="cert-name">Skill India Certificate</div>
+          <div class="cert-iss">Skill India</div>
+        </div>
+      </a>
+
+      <a class="cc cert-link" href="https://drive.google.com/file/d/1gnaAfYQMcWoZee_XzaVj-D97x4CkMzgz/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <div class="cc-shine"></div>
+        <div class="cert-logo cl-sql"><i class="devicon-mysql-plain colored" style="font-size: 20px;"></i></div>
+        <div>
+          <div class="cert-name">SQL Certificate</div>
+          <div class="cert-iss">SQL Program</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <div class="divider"></div>
+  <section class="sec reveal">
+    <div class="eyebrow">achievements</div>
+    <h2 class="stitle">Highlights</h2>
+
+    <div class="ag">
+      <div class="ac-card">
+        <span class="ac-trophy">&#x1F947;</span>
+        <div class="ac-title">1st Place - Research Day</div>
+        <p class="ac-desc">Published research on multimodal summarization techniques and won top prize at the institutional Research Day competition.</p>
+        <span class="ac-badge">Academic Research</span>
+      </div>
+
+      <div class="ac-card">
+        <span class="ac-trophy">&#x1F949;</span>
+        <div class="ac-title">3rd Place - GDG Hackathon</div>
+        <p class="ac-desc">Collaborated on innovative technical solutions at the Google Developer Group Hackathon in Nellore.</p>
+        <span class="ac-badge">Hackathon - Nellore</span>
+      </div>
+
+      <div class="ac-card">
+        <span class="ac-trophy">&#x1F3C6;</span>
+        <div class="ac-title">InnoVit Technical Event - Winners</div>
+        <p class="ac-desc">Won the InnoVit technical event by building and presenting an innovative solution in a competitive team setting.</p>
+        <span class="ac-badge">InnoVit - Winners</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <div class="divider"></div>
+  <section class="sec reveal">
+    <div class="eyebrow">education</div>
+    <h2 class="stitle">Academic background</h2>
+
+    <div class="edu-tl">
+      <div class="edu-item">
+        <div class="edu-yr">2022-2026</div>
+        <div class="edu-body">
+          <div class="edu-deg">B.Tech - Artificial Intelligence & Machine Learning</div>
+          <div class="edu-sch">Vishnu Institute of Technology - Bhimavaram, India</div>
+          <span class="edu-sc">GPA: 8.1 / 10</span>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-yr">2020-2022</div>
+        <div class="edu-body">
+          <div class="edu-deg">Intermediate - MPC</div>
+          <div class="edu-sch">Sri Saraswathi Jr College - Ongole</div>
+          <span class="edu-sc">91.1%</span>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-yr">2019-2020</div>
+        <div class="edu-body">
+          <div class="edu-deg">High School - SSC</div>
+          <div class="edu-sch">Z.P High School - Pothakamuru</div>
+          <span class="edu-sc">CGPA: 10 / 10</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <div class="divider"></div>
+  <section class="sec reveal" id="contact">
+    <div class="eyebrow">contact</div>
+    <h2 class="stitle">Let's connect</h2>
+
+    <div class="contact-wrap">
+      <div class="contact-text">
+        <h3>Open to opportunities</h3>
+        <p>
+          Actively seeking entry-level roles in AI, ML, and data engineering.
+          Full-time, internship, or collaboration opportunities are welcome.
+        </p>
+      </div>
+
+      <div class="cl">
+        <a href="mailto:amaresamram@gmail.com" class="ci">
+          <div class="ci-icon">&#x2709;&#xFE0F;</div>
+          <div>
+            <div class="ci-label">EMAIL</div>
+            <div class="ci-val">amaresamram@gmail.com</div>
+          </div>
+        </a>
+
+        <a href="tel:+919849599200" class="ci">
+          <div class="ci-icon">&#x1F4DE;</div>
+          <div>
+            <div class="ci-label">PHONE</div>
+            <div class="ci-val">+91 98495 99200</div>
+          </div>
+        </a>
+
+        <a href="https://github.com/ram-118" target="_blank" rel="noopener noreferrer" class="ci">
+          <div class="ci-icon"><i class="devicon-github-original" style="font-size: 18px; color: #94a3b8;"></i></div>
+          <div>
+            <div class="ci-label">GITHUB</div>
+            <div class="ci-val">github.com/ram-118</div>
+          </div>
+        </a>
+
+        <a href="https://linkedin.com/in/amaresam-ram" target="_blank" rel="noopener noreferrer" class="ci">
+          <div class="ci-icon"><i class="devicon-linkedin-plain colored" style="font-size: 18px;"></i></div>
+          <div>
+            <div class="ci-label">LINKEDIN</div>
+            <div class="ci-val">linkedin.com/in/amaresam-ram</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="fl">Built by <span>Amaresam Ramanjaneyulu</span> - 2026</div>
+    <div class="fl">Ongole, India - <span>Open to work &#x1F7E2;</span></div>
+  </footer>
+
+  <script>
+    // PARTICLES
+    (function () {
+      const c = document.getElementById('particles');
+      const ctx = c.getContext('2d');
+      let w;
+      let h;
+      const pts = [];
+
+      function resize() {
+        w = c.width = innerWidth;
+        h = c.height = innerHeight;
+      }
+
+      resize();
+      window.addEventListener('resize', resize);
+
+      for (let i = 0; i < 70; i += 1) {
+        pts.push({
+          x: Math.random() * innerWidth,
+          y: Math.random() * innerHeight,
+          vx: (Math.random() - 0.5) * 0.3,
+          vy: (Math.random() - 0.5) * 0.3,
+          r: Math.random() * 1.5 + 0.5,
+          a: Math.random()
+        });
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, w, h);
+
+        pts.forEach((p) => {
+          p.x += p.vx;
+          p.y += p.vy;
+
+          if (p.x < 0) p.x = w;
+          if (p.x > w) p.x = 0;
+          if (p.y < 0) p.y = h;
+          if (p.y > h) p.y = 0;
+
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(56,189,248,${p.a * 0.6})`;
+          ctx.fill();
+        });
+
+        pts.forEach((a, i) => {
+          pts.slice(i + 1).forEach((b) => {
+            const d = Math.hypot(a.x - b.x, a.y - b.y);
+            if (d < 120) {
+              ctx.beginPath();
+              ctx.moveTo(a.x, a.y);
+              ctx.lineTo(b.x, b.y);
+              ctx.strokeStyle = `rgba(56,189,248,${(1 - d / 120) * 0.12})`;
+              ctx.stroke();
+            }
+          });
+        });
+
+        requestAnimationFrame(draw);
+      }
+
+      draw();
+    })();
+
+    // CURSOR
+    const cur = document.getElementById('cur');
+    const ring = document.getElementById('ring');
+    let mx = 0;
+    let my = 0;
+    let rx = 0;
+    let ry = 0;
+
+    document.addEventListener('mousemove', (e) => {
+      mx = e.clientX;
+      my = e.clientY;
+      cur.style.left = `${mx}px`;
+      cur.style.top = `${my}px`;
+    });
+
+    function animRing() {
+      rx += (mx - rx) * 0.12;
+      ry += (my - ry) * 0.12;
+      ring.style.left = `${rx}px`;
+      ring.style.top = `${ry}px`;
+      requestAnimationFrame(animRing);
+    }
+
+    animRing();
+
+    document.querySelectorAll('a,button,.pc,.tech-item').forEach((el) => {
+      el.addEventListener('mouseenter', () => {
+        cur.style.width = '20px';
+        cur.style.height = '20px';
+        ring.style.width = '50px';
+        ring.style.height = '50px';
+      });
+
+      el.addEventListener('mouseleave', () => {
+        cur.style.width = '12px';
+        cur.style.height = '12px';
+        ring.style.width = '36px';
+        ring.style.height = '36px';
+      });
+    });
+
+    // SCROLL REVEAL
+    const obs = new IntersectionObserver(
+      (es) => {
+        es.forEach((e) => {
+          if (e.isIntersecting) e.target.classList.add('vis');
+        });
+      },
+      { threshold: 0.06 }
+    );
+
+    document.querySelectorAll('.reveal').forEach((el) => obs.observe(el));
+
+    // STAGGER CARDS
+    const sobs = new IntersectionObserver(
+      (es) => {
+        es.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.querySelectorAll('.pc:not(.hidden),.cc,.sg,.ac-card,.edu-body').forEach((c, i) => {
+              c.style.cssText = 'opacity:0;transform:translateY(20px);transition:opacity 0.4s ease,transform 0.4s ease';
+              setTimeout(() => {
+                c.style.cssText = 'opacity:1;transform:translateY(0);transition:opacity 0.4s ease,transform 0.4s ease';
+              }, 80 + i * 80);
+            });
+            sobs.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.04 }
+    );
+
+    document.querySelectorAll('.sec').forEach((el) => sobs.observe(el));
+
+    // COUNTERS
+    function count(el, target, dec, suf) {
+      let s;
+      const d = 1600;
+
+      (function step(ts) {
+        if (!s) s = ts;
+        const p = Math.min((ts - s) / d, 1);
+        el.textContent = `${dec ? (p * target).toFixed(dec) : Math.floor(p * target)}${suf || ''}`;
+        if (p < 1) {
+          requestAnimationFrame(step);
+        } else {
+          el.textContent = `${dec ? target.toFixed(dec) : target}${suf || ''}`;
+        }
+      })(performance.now());
+    }
+
+    const so = new IntersectionObserver(
+      (es) => {
+        es.forEach((e) => {
+          if (e.isIntersecting) {
+            const certCount = document.querySelectorAll('.certs-grid .cc').length;
+            count(document.getElementById('s1'), 8.1, 1);
+            count(document.getElementById('s2'), 10);
+            count(document.getElementById('s3'), certCount);
+            document.getElementById('s4').textContent = '2\u00D7';
+            so.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    const sr = document.querySelector('.stats-row');
+    if (sr) so.observe(sr);
+
+    // FILTER
+    document.querySelectorAll('.fb').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.fb').forEach((b) => b.classList.remove('on'));
+        btn.classList.add('on');
+        const f = btn.dataset.f;
+        let shown = 0;
+
+        document.querySelectorAll('.pc').forEach((card) => {
+          const cats = card.dataset.c || '';
+          const visible = f === 'all' || cats.includes(f);
+          card.classList.toggle('hidden', !visible);
+          if (visible) {
+            shown += 1;
+            setTimeout(() => {
+              card.style.cssText = 'opacity:1;transform:translateY(0);transition:opacity 0.35s ease,transform 0.35s ease';
+            }, shown * 60);
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
