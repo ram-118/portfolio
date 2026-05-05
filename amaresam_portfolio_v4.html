@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Amaresam Ramanjaneyulu</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link
     href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Sora:wght@300;400;600;700;800&display=swap"
     rel="stylesheet"
@@ -55,6 +56,9 @@
       </p>
 
       <div class="hero-cta">
+        <a href="https://drive.google.com/drive/folders/1tlpkf0_FDvXoU3jlHCqRthlWIHMyLMKz?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-r">
+          Resume
+        </a>
         <a href="https://github.com/ram-118" target="_blank" rel="noopener noreferrer" class="btn btn-p">
           <i class="devicon-github-original" style="font-size: 16px;"></i> GitHub
         </a>
@@ -65,27 +69,22 @@
       </div>
     </div>
 
-    <div class="hero-signature-logo" aria-hidden="true">
-      <div class="setup-scene">
-        <div class="monitor">
-          <div class="screen-glow"></div>
-          <div class="code-bracket">&lt;/&gt;</div>
-          <span class="code-line c1"></span>
-          <span class="code-line c2"></span>
-          <span class="code-line c3"></span>
+    <div class="hero-signature-logo">
+      <div class="hero-photo-frame">
+        <div class="hero-photo-fallback" aria-hidden="true">
+          <span>AR</span>
         </div>
-        <div class="monitor-stand"></div>
-        <div class="human">
-          <div class="human-head"></div>
-          <div class="human-body"></div>
-          <div class="human-arm"></div>
-          <div class="human-chair"></div>
+        <img
+          src="profile-portrait.jpeg"
+          alt="Portrait of Amaresam Ramanjaneyulu"
+          class="hero-photo"
+          onerror="this.style.display='none'; this.parentElement.classList.add('photo-missing');"
+        >
+        <div class="hero-photo-tag">
+          <span class="hero-photo-name">Amaresam Ram</span>
+          <span class="hero-photo-role">AI / ML Engineer</span>
         </div>
-        <div class="keyboard"></div>
-        <div class="mug"></div>
-        <div class="desk-line"></div>
       </div>
-      <div class="sig-tag"></div>
     </div>
   </section>
 
@@ -224,186 +223,15 @@
     <h2 class="stitle">All GitHub repositories</h2>
 
     <div class="pf">
-      <button class="fb on" data-f="all">All (10)</button>
-      <button class="fb" data-f="python">&#x1F40D; Python</button>
-      <button class="fb" data-f="java">&#x2615; Java</button>
-      <button class="fb" data-f="ml">&#x1F9E0; ML / AI</button>
-      <button class="fb" data-f="data">&#x1F4CA; Data</button>
+      <button class="fb on" data-f="all">All (<span id="filter-all-count">0</span>)</button>
+      <button class="fb" data-f="python">&#x1F40D; Python (<span id="filter-python-count">0</span>)</button>
+      <button class="fb" data-f="java">&#x2615; Java (<span id="filter-java-count">0</span>)</button>
+      <button class="fb" data-f="ml">&#x1F9E0; ML / AI (<span id="filter-ml-count">0</span>)</button>
+      <button class="fb" data-f="data">&#x1F4CA; Data (<span id="filter-data-count">0</span>)</button>
     </div>
 
     <div class="pg" id="pg">
-      <article class="pc" data-c="python ml">
-        <div class="pc-glow"></div>
-        <div class="feat">&#x2B50; Featured</div>
-        <div class="pc-top">
-          <div class="pc-ico ico-py"><i class="devicon-python-plain colored" style="font-size: 24px;"></i></div>
-          <div class="pc-links">
-            <span class="lang-b lb-py"><i class="devicon-python-plain colored"></i>Python</span>
-            <a href="https://github.com/ram-118/agentic-calendar-rag" target="_blank" rel="noopener noreferrer" class="gh-btn"><i class="devicon-github-original" style="font-size: 14px;"></i></a>
-          </div>
-        </div>
-        <div class="pc-title">agentic-calendar-rag</div>
-        <p class="pc-desc">Agentic RAG system handling calendar and scheduling queries using LLMs. Vector-based semantic search enables context-aware grounded responses with about 85-90% query accuracy.</p>
-        <div class="pc-foot">
-          <div class="pc-tags"><span class="tg">LLMs</span><span class="tg">RAG</span><span class="tg">VectorDB</span></div>
-          <div class="pc-date">Jan 7</div>
-        </div>
-      </article>
-
-      <article class="pc" data-c="python ml">
-        <div class="pc-glow"></div>
-        <div class="feat">&#x2B50; Featured</div>
-        <div class="pc-top">
-          <div class="pc-ico ico-py">&#x1F4DD;</div>
-          <div class="pc-links">
-            <span class="lang-b lb-py"><i class="devicon-python-plain colored"></i>Python</span>
-            <a href="https://github.com/ram-118/text-summarization" target="_blank" rel="noopener noreferrer" class="gh-btn"><i class="devicon-github-original" style="font-size: 14px;"></i></a>
-          </div>
-        </div>
-        <div class="pc-title">text-summarization</div>
-        <p class="pc-desc">Facebook BART transformer plus NLTK and SpaCy preprocessing for automated summarization. Optimized for F1-score with around 85% accuracy and about 40% less manual effort.</p>
-        <div class="pc-foot">
-          <div class="pc-tags"><span class="tg">BART</span><span class="tg">NLTK</span><span class="tg">SpaCy</span></div>
-          <div class="pc-date">May 27, 2025</div>
-        </div>
-      </article>
-
-      <article class="pc" data-c="data">
-        <div class="pc-glow"></div>
-        <div class="feat">&#x2B50; Featured</div>
-        <div class="pc-top">
-          <div class="pc-ico ico-pbi">&#x1F4CA;</div>
-          <div class="pc-links">
-            <span class="lang-b lb-pbi">Power BI</span>
-            <a href="https://github.com/ram-118/Blinkit_analysis" target="_blank" rel="noopener noreferrer" class="gh-btn"><i class="devicon-github-original" style="font-size: 14px;"></i></a>
-          </div>
-        </div>
-        <div class="pc-title">Blinkit_analysis</div>
-        <p class="pc-desc">Interactive Power BI dashboard with 12+ visualizations for sales trends, customer satisfaction, and product performance. Reduced reporting effort and sped up analysis workflows.</p>
-        <div class="pc-foot">
-          <div class="pc-tags"><span class="tg">PowerBI</span><span class="tg">DAX</span><span class="tg">Analytics</span></div>
-          <div class="pc-date">May 26, 2025</div>
-        </div>
-      </article>
-
-      <article class="pc" data-c="python ml">
-        <div class="pc-glow"></div>
-        <div class="pc-top">
-          <div class="pc-ico ico-py"><i class="devicon-python-plain colored" style="font-size: 24px;"></i></div>
-          <div class="pc-links">
-            <span class="lang-b lb-py"><i class="devicon-python-plain colored"></i>Python</span>
-            <a href="https://github.com/ram-118/nlp_project" target="_blank" rel="noopener noreferrer" class="gh-btn"><i class="devicon-github-original" style="font-size: 14px;"></i></a>
-          </div>
-        </div>
-        <div class="pc-title">nlp_project</div>
-        <p class="pc-desc">Text summarization using NLP with classical and neural approaches for automated document summarization in Python.</p>
-        <div class="pc-foot">
-          <div class="pc-tags"><span class="tg">NLP</span><span class="tg">Python</span></div>
-          <div class="pc-date">Dec 18, 2024</div>
-        </div>
-      </article>
-
-      <article class="pc" data-c="python ml">
-        <div class="pc-glow"></div>
-        <div class="pc-top">
-          <div class="pc-ico ico-nb"><i class="devicon-jupyter-plain colored" style="font-size: 24px;"></i></div>
-          <div class="pc-links">
-            <span class="lang-b lb-nb"><i class="devicon-jupyter-plain colored"></i>Jupyter</span>
-            <a href="https://github.com/ram-118/ml-project-1" target="_blank" rel="noopener noreferrer" class="gh-btn"><i class="devicon-github-original" style="font-size: 14px;"></i></a>
-          </div>
-        </div>
-        <div class="pc-title">ml-project-1</div>
-        <p class="pc-desc">Machine learning notebook exploring model training, evaluation, and optimization workflows using Python and Jupyter.</p>
-        <div class="pc-foot">
-          <div class="pc-tags"><span class="tg">ML</span><span class="tg">Jupyter</span></div>
-          <div class="pc-date">May 23, 2024</div>
-        </div>
-      </article>
-
-      <article class="pc" data-c="java">
-        <div class="pc-glow"></div>
-        <div class="pc-top">
-          <div class="pc-ico ico-java"><i class="devicon-java-plain colored" style="font-size: 24px;"></i></div>
-          <div class="pc-links">
-            <span class="lang-b lb-java"><i class="devicon-java-plain colored"></i>Java</span>
-            <a href="https://github.com/ram-118/Quiz-Automation" target="_blank" rel="noopener noreferrer" class="gh-btn"><i class="devicon-github-original" style="font-size: 14px;"></i></a>
-          </div>
-        </div>
-        <div class="pc-title">Quiz-Automation</div>
-        <p class="pc-desc">Java-based quiz automation system for generating, running, and evaluating quiz workflows programmatically.</p>
-        <div class="pc-foot">
-          <div class="pc-tags"><span class="tg">Java</span><span class="tg">Automation</span></div>
-          <div class="pc-date">Jan 23</div>
-        </div>
-      </article>
-
-      <article class="pc" data-c="java data">
-        <div class="pc-glow"></div>
-        <div class="pc-top">
-          <div class="pc-ico ico-java">&#x1F418;</div>
-          <div class="pc-links">
-            <span class="lang-b lb-java"><i class="devicon-java-plain colored"></i>Java</span>
-            <a href="https://github.com/ram-118/BDA-hadoop" target="_blank" rel="noopener noreferrer" class="gh-btn"><i class="devicon-github-original" style="font-size: 14px;"></i></a>
-          </div>
-        </div>
-        <div class="pc-title">BDA-hadoop</div>
-        <p class="pc-desc">Big data analytics with Hadoop using Java MapReduce implementations for distributed data processing pipelines.</p>
-        <div class="pc-foot">
-          <div class="pc-tags"><span class="tg">Hadoop</span><span class="tg">MapReduce</span><span class="tg">BigData</span></div>
-          <div class="pc-date">Mar 15, 2025</div>
-        </div>
-      </article>
-
-      <article class="pc" data-c="ml python">
-        <div class="pc-glow"></div>
-        <div class="pc-top">
-          <div class="pc-ico ico-misc">&#x1F50D;</div>
-          <div class="pc-links">
-            <span class="lang-b lb-misc">General</span>
-            <a href="https://github.com/ram-118/code-review" target="_blank" rel="noopener noreferrer" class="gh-btn"><i class="devicon-github-original" style="font-size: 14px;"></i></a>
-          </div>
-        </div>
-        <div class="pc-title">code-review</div>
-        <p class="pc-desc">Automated code review tooling with AI-assisted suggestions and static analysis to streamline the development review process.</p>
-        <div class="pc-foot">
-          <div class="pc-tags"><span class="tg">AI</span><span class="tg">DevTools</span></div>
-          <div class="pc-date">Jul 7, 2025</div>
-        </div>
-      </article>
-
-      <article class="pc" data-c="ml">
-        <div class="pc-glow"></div>
-        <div class="pc-top">
-          <div class="pc-ico ico-dart"><i class="devicon-flutter-plain colored" style="font-size: 24px;"></i></div>
-          <div class="pc-links">
-            <span class="lang-b lb-dart"><i class="devicon-flutter-plain colored"></i>Dart</span>
-            <a href="https://github.com/ram-118/Sign-Bridge" target="_blank" rel="noopener noreferrer" class="gh-btn"><i class="devicon-github-original" style="font-size: 14px;"></i></a>
-          </div>
-        </div>
-        <div class="pc-title">Sign-Bridge</div>
-        <p class="pc-desc">Flutter and Dart sign language bridge app connecting hearing-impaired users through real-time gesture recognition and translation. (Forked)</p>
-        <div class="pc-foot">
-          <div class="pc-tags"><span class="tg">Flutter</span><span class="tg">Dart</span><span class="tg">AI</span></div>
-          <div class="pc-date">Dec 15, 2024</div>
-        </div>
-      </article>
-
-      <article class="pc" data-c="misc">
-        <div class="pc-glow"></div>
-        <div class="pc-top">
-          <div class="pc-ico ico-misc">&#x2705;</div>
-          <div class="pc-links">
-            <span class="lang-b lb-misc">General</span>
-            <a href="https://github.com/ram-118/to-do_list" target="_blank" rel="noopener noreferrer" class="gh-btn"><i class="devicon-github-original" style="font-size: 14px;"></i></a>
-          </div>
-        </div>
-        <div class="pc-title">to-do_list</div>
-        <p class="pc-desc">Task management to-do application for organizing and tracking daily tasks and productivity goals.</p>
-        <div class="pc-foot">
-          <div class="pc-tags"><span class="tg">App</span><span class="tg">Productivity</span></div>
-          <div class="pc-date">Feb 23, 2024</div>
-        </div>
-      </article>
+      <div class="projects-status" id="projects-status">Loading repositories from GitHub...</div>
     </div>
   </section>
 
@@ -828,6 +656,239 @@
 
     document.querySelectorAll('.sec').forEach((el) => sobs.observe(el));
 
+    const githubRepoState = {
+      totalRepos: 0
+    };
+
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, (char) => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;'
+      }[char]));
+    }
+
+    function formatRepoDate(value) {
+      return new Date(value).toLocaleDateString('en-US', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric'
+      });
+    }
+
+    function getRepoCategories(repo) {
+      const categories = new Set();
+      const text = `${repo.name} ${repo.description || ''}`.toLowerCase();
+      const language = (repo.language || '').toLowerCase();
+
+      if (language === 'python' || text.includes('python')) categories.add('python');
+      if (language === 'java' || text.includes('java')) categories.add('java');
+
+      if (
+        ['jupyter notebook', 'python', 'dart'].includes(language) ||
+        /(ml|ai|nlp|rag|llm|vision|model|summarization|agentic)/.test(text)
+      ) {
+        categories.add('ml');
+      }
+
+      if (
+        /(data|analytics|dashboard|power bi|hadoop|spark|etl|big data|mapreduce)/.test(text) ||
+        ['jupyter notebook', 'sql'].includes(language)
+      ) {
+        categories.add('data');
+      }
+
+      if (categories.size === 0) categories.add('misc');
+
+      return Array.from(categories);
+    }
+
+    function getRepoAccent(repo) {
+      const language = (repo.language || '').toLowerCase();
+      if (language === 'python') {
+        return {
+          icon: '<i class="devicon-python-plain colored" style="font-size: 24px;"></i>',
+          badge: '<i class="devicon-python-plain colored"></i>Python',
+          badgeClass: 'lb-py',
+          iconClass: 'ico-py'
+        };
+      }
+
+      if (language === 'java') {
+        return {
+          icon: '<i class="devicon-java-plain colored" style="font-size: 24px;"></i>',
+          badge: '<i class="devicon-java-plain colored"></i>Java',
+          badgeClass: 'lb-java',
+          iconClass: 'ico-java'
+        };
+      }
+
+      if (language === 'dart') {
+        return {
+          icon: '<i class="devicon-flutter-plain colored" style="font-size: 24px;"></i>',
+          badge: '<i class="devicon-flutter-plain colored"></i>Dart',
+          badgeClass: 'lb-dart',
+          iconClass: 'ico-dart'
+        };
+      }
+
+      if (language === 'jupyter notebook') {
+        return {
+          icon: '<i class="devicon-jupyter-plain colored" style="font-size: 24px;"></i>',
+          badge: '<i class="devicon-jupyter-plain colored"></i>Jupyter',
+          badgeClass: 'lb-nb',
+          iconClass: 'ico-nb'
+        };
+      }
+
+      if (getRepoCategories(repo).includes('data')) {
+        return {
+          icon: '&#x1F4CA;',
+          badge: 'Data',
+          badgeClass: 'lb-pbi',
+          iconClass: 'ico-pbi'
+        };
+      }
+
+      if (getRepoCategories(repo).includes('ml')) {
+        return {
+          icon: '&#x1F9E0;',
+          badge: 'AI / ML',
+          badgeClass: 'lb-ml',
+          iconClass: 'ico-ml'
+        };
+      }
+
+      return {
+        icon: '&#x1F4C1;',
+        badge: repo.language || 'General',
+        badgeClass: 'lb-misc',
+        iconClass: 'ico-misc'
+      };
+    }
+
+    function getRepoTags(repo) {
+      const tags = [];
+      const language = repo.language || 'General';
+      tags.push(language);
+
+      const text = `${repo.name} ${repo.description || ''}`.toLowerCase();
+      if (/(ai|ml|rag|llm|nlp)/.test(text)) tags.push('AI');
+      if (/(dashboard|analytics|power bi)/.test(text)) tags.push('Analytics');
+      if (/(hadoop|spark|mapreduce|big data)/.test(text)) tags.push('BigData');
+      if (/(app|flutter|mobile)/.test(text)) tags.push('App');
+      if (repo.fork) tags.push('Fork');
+
+      return Array.from(new Set(tags)).slice(0, 3);
+    }
+
+    function createRepoCard(repo) {
+      const categories = getRepoCategories(repo);
+      const accent = getRepoAccent(repo);
+      const tags = getRepoTags(repo)
+        .map((tag) => `<span class="tg">${escapeHtml(tag)}</span>`)
+        .join('');
+      const description = repo.description
+        ? escapeHtml(repo.description)
+        : 'Repository synced automatically from GitHub. Open it to explore the code, commits, and latest updates.';
+      const featured = repo.stargazers_count > 0 || categories.includes('ml');
+
+      return `
+        <article class="pc" data-c="${categories.join(' ')}">
+          <div class="pc-glow"></div>
+          ${featured ? '<div class="feat">&#x2B50; Live Repo</div>' : ''}
+          <div class="pc-top">
+            <div class="pc-ico ${accent.iconClass}">${accent.icon}</div>
+            <div class="pc-links">
+              <span class="lang-b ${accent.badgeClass}">${accent.badge}</span>
+              <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer" class="gh-btn" aria-label="Open ${escapeHtml(repo.name)} on GitHub"><i class="devicon-github-original" style="font-size: 14px;"></i></a>
+            </div>
+          </div>
+          <div class="pc-title">${escapeHtml(repo.name)}</div>
+          <p class="pc-desc">${description}</p>
+          <div class="pc-foot">
+            <div class="pc-tags">${tags}</div>
+            <div class="pc-date">${formatRepoDate(repo.pushed_at || repo.updated_at)}</div>
+          </div>
+        </article>
+      `;
+    }
+
+    function updateProjectFilterCounts(repos) {
+      const counts = {
+        all: repos.length,
+        python: 0,
+        java: 0,
+        ml: 0,
+        data: 0
+      };
+
+      repos.forEach((repo) => {
+        const categories = getRepoCategories(repo);
+        categories.forEach((category) => {
+          if (counts[category] !== undefined) counts[category] += 1;
+        });
+      });
+
+      Object.entries(counts).forEach(([key, value]) => {
+        const el = document.getElementById(`filter-${key}-count`);
+        if (el) el.textContent = String(value);
+      });
+    }
+
+    function renderGitHubProjects(repos) {
+      const container = document.getElementById('pg');
+      if (!container) return;
+
+      if (!repos.length) {
+        container.innerHTML = '<div class="projects-status">No public repositories found right now.</div>';
+        return;
+      }
+
+      container.innerHTML = repos.map(createRepoCard).join('');
+      const activeFilter = document.querySelector('.fb.on')?.dataset.f || 'all';
+
+      document.querySelectorAll('.pc').forEach((card) => {
+        const categories = card.dataset.c || '';
+        const visible = activeFilter === 'all' || categories.includes(activeFilter);
+        card.classList.toggle('hidden', !visible);
+      });
+    }
+
+    async function loadGitHubProjects() {
+      const container = document.getElementById('pg');
+      if (!container) return;
+
+      try {
+        const response = await fetch('https://api.github.com/users/ram-118/repos?per_page=100&sort=updated', {
+          headers: {
+            Accept: 'application/vnd.github+json'
+          }
+        });
+
+        if (!response.ok) {
+          throw new Error(`GitHub responded with ${response.status}`);
+        }
+
+        const repos = (await response.json())
+          .filter((repo) => !repo.fork)
+          .sort((a, b) => new Date(b.pushed_at || b.updated_at) - new Date(a.pushed_at || a.updated_at));
+
+        githubRepoState.totalRepos = repos.length;
+        const repoCountEl = document.getElementById('s2');
+        if (repoCountEl) repoCountEl.textContent = String(repos.length);
+        updateProjectFilterCounts(repos);
+        renderGitHubProjects(repos);
+      } catch (error) {
+        container.innerHTML = '<div class="projects-status">GitHub repositories could not be loaded right now. Please try again in a moment.</div>';
+        console.error('Failed to load GitHub repositories:', error);
+      }
+    }
+
+    loadGitHubProjects();
+
     // COUNTERS
     function count(el, target, dec, suf) {
       let s;
@@ -851,7 +912,7 @@
           if (e.isIntersecting) {
             const certCount = document.querySelectorAll('.certs-grid .cc').length;
             count(document.getElementById('s1'), 8.1, 1);
-            count(document.getElementById('s2'), 10);
+            count(document.getElementById('s2'), githubRepoState.totalRepos);
             count(document.getElementById('s3'), certCount);
             document.getElementById('s4').textContent = '2\u00D7';
             so.unobserve(e.target);
